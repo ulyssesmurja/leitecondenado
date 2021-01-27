@@ -1,0 +1,145 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #393838;
+  background-color: #fff;
+}
+a {
+  cursor: pointer;
+  pointer-events: auto;
+  color: #000000;
+}
+nav {
+  background: #e3e3e3;
+  padding: 15px;
+}
+.block {
+  min-height: 440px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+}
+.block-content {
+  display: flex;
+  max-width: 55%;
+}
+#content-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+#content-block span,
+#content-by-year span {
+  color: #ffcb05;
+}
+.first-block {
+  background: url('../img/banner1.png');
+  background-position: center top;
+  background-size: cover;
+}
+.second-block {
+  background: url('../img/banner2.png');
+  background-position: center top;
+  background-size: cover;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.snack {
+  background: #27ae60;
+  color: #fff;
+  padding: 5px 25px;
+  font-size: 14px;
+  border-radius: 100px;
+  width: 320px;
+  margin: 25px auto 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: auto;
+}
+@media (min-width: 0px) {
+  h1 {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 50px 0 25px 0;
+  }
+  .block {
+    min-height: 240px;
+    font-size: 22px;
+    line-height: 32px;
+    margin: 25px 0;
+  }
+  .block-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 240px;
+    max-width: 65%;
+  }
+  .logo {
+    max-width: 55px;
+  }
+  .footer span {
+    font-size: 13px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .block-content {
+    max-width: 55%;
+  }
+}
+
+@media (min-width: 1300px) {
+  h1 {
+    font-size: 26px;
+    line-height: 34px;
+    margin: 50px 0 25px 0;
+  }
+  .block {
+    min-height: 440px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 25px 0;
+    padding: 25px;
+  }
+  .block-content {
+    min-height: 440px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .block {
+    min-height: 440px;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 25px 0;
+    padding: 25px;
+  }
+  .block-content {
+    max-width: 60%;
+  }
+}
